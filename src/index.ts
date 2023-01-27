@@ -19,7 +19,7 @@ API.prepare = CORS.preflight({
 	methods: ['GET', 'HEAD', 'OPTIONS'],
 });
 
-API.add('GET', '/', () => reply(200, '/:width/:height'))
-API.add('GET', '/:width/:height', PlaceholderController.index);
+API.add('GET', '/', () => reply(200, '/:height/:width'))
+API.add('GET', '/:height/:width', PlaceholderController.index);
 
 export default start(API.run);
