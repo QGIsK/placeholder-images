@@ -1,0 +1,41 @@
+{
+	"name": "worker-api",
+	"version": "1.0.0",
+	"description": "Cloudflare worker TypeScript template",
+	"main": "dist/worker.js",
+	"scripts": {
+		"build": "webpack",
+		"format": "prettier --write .",
+		"lint": "eslint \"**/*.ts\"",
+		"lint:fix": "eslint \"**/*.ts\" --fix"
+	},
+	"author": "author",
+	"license": "MIT OR Apache-2.0",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^3.0.0",
+		"@types/jest": "^26.0.23",
+		"@types/service-worker-mock": "^2.0.1",
+		"@typescript-eslint/parser": "^5.33.0",
+		"eslint": "^8.21.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-plugin-security": "^1.5.0",
+		"jest": "^27.0.1",
+		"prettier": "^2.3.0",
+		"service-worker-mock": "^2.0.5",
+		"ts-loader": "^9.2.2",
+		"typescript": "^4.7.4",
+		"webpack": "^5.38.1",
+		"webpack-cli": "^4.7.0"
+	},
+	"dependencies": {
+		"@cstools-app/faceit-wrapper": "^1.0.0",
+		"@qgisk/steamresolver": "^3.0.0",
+		"buffer": "^6.0.3",
+		"cheerio": "^1.0.0-rc.10",
+		"stream-browserify": "^3.0.0",
+		"string_decoder": "^1.3.0",
+		"timers-browserify": "^2.0.12",
+		"urlcat": "^2.0.4",
+		"worktop": "^0.8.0-next.14"
+	}
+}

@@ -1,0 +1,8 @@
+name = "cstools"
+account_id = "1bda26fe457ea7a9dcd193e268e07770"
+workers_dev = true
+compatibility_date = "2022-06-06"
+main = "dist/worker.js"
+
+[build]
+command = "npm install && npm run build"
