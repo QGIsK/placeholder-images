@@ -4,6 +4,7 @@ import { start } from 'worktop/sw';
 import * as Cache from 'worktop/cfw.cache';
 
 import * as PlaceholderController from '~/controllers/placeholder'
+import { reply } from 'worktop/response';
 
 const API = new Router();
 API.prepare = Cache.sync();
@@ -18,6 +19,7 @@ API.prepare = CORS.preflight({
 	methods: ['GET', 'HEAD', 'OPTIONS'],
 });
 
+API.add('GET', '/', () => reply(200, '/:width/:height'))
 API.add('GET', '/:width/:height', PlaceholderController.index);
 
 export default start(API.run);
